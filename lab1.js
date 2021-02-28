@@ -7,18 +7,26 @@ let fruit = [
   { name: "Grapes", quantity: 8, color: "purple" },
 ];
 
-let x = 0;
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+drawChart(ctx);
 
-function draw() {
-  var canvas = document.getElementById("canvas");
-  if (canvas.getContext) {
-    var ctx = canvas.getContext("2d");
-    for (var i = 0; i < fruit.length; i++) {
-      var obj = fruit[i];
-
-      ctx.fillStyle = obj.color;
-      ctx.fillRect(x, 500, 150, 100);
-      x += 50;
-    }
+function drawChart(ctx) {
+  let position = 0;
+  for (let i = 0; i < fruit.length; i++) {
+    drawBar(ctx, position, fruit[i].quantity, fruit[i].color);
+    writeFruitName(ctx, position, fruit[i].name);
+    position += 100;
   }
+}
+
+function drawBar(ctx, position, height, fruitColor) {
+  ctx.fillStyle = fruitColor;
+  ctx.fillRect(position, 600, 100, -height * 20);
+}
+
+function writeFruitName(ctx, position, fruitName) {
+  ctx.fillStyle = "black";
+  ctx.font = "bold 20px serif";
+  ctx.fillText(fruitName, position + 10, 590);
 }
