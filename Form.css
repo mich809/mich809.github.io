@@ -1,0 +1,45 @@
+body {
+  background: #ef32d9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef32d9,
+    #89fffd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef32d9, #89fffd);
+}
+form {
+  text-align: center;
+  width: 500px;
+  position: absolute;
+  top: 30%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+textarea {
+  width: 400px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.clearButton {
+  transition-duration: 0.4s;
+  font-size: 30px;
+  width: 300px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.clearButton:hover {
+  background-color: red;
+  color: white;
+}
+
+.title {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 300px;
+}
