@@ -25,7 +25,8 @@ new Chart(document.getElementById("doughnut-chart"), {
   options: {
     title: {
       display: true,
-      text: "2017 New York City Leading Hispanic Male Causes of Death",
+      text:
+        "(Michael Caridad)2017 New York City Leading Hispanic Male Causes of Death",
     },
   },
 });
