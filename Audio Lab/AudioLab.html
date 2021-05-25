@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+    <p>Annoying New York City Sounds</p>
+
+    <audio id="ambulance"><source src="resources/ambulance.mp3" type="audio/mpeg" ></audio>
+    <audio id="fireTruck"><source src="resources/fire-truck.mp3" type="audio/mpeg" ></audio>
+    <audio id="police"><source src="resources/police.mp3" type="audio/mpeg" ></audio>
+    <audio id="smokeAlarm"><source src="resources/smoke-alarm.mp3" type="audio/mpeg" ></audio>
+    <audio id="tires"><source src="resources/tires.mp3" type="audio/mpeg" ></audio>
+
+    <img
+      src="resources/piano-keys-music-canvas.jpg"
+      alt="Piano"
+      usemap="#pianoKeys"     
+    />
+
+    <map name="pianoKeys">        
+      <area id="D" href="#" coords="0,383,85,42"    shape="rect" onclick="playAudio(ambulance)">
+      <area id="E" href="#" coords="86,384,167,72"  shape="rect" onclick="playAudio(fireTruck)">
+       <area id="F" href="#" coords="168,385,245,57" shape="rect" onclick="playAudio(police)">
+       <area id="G" href="#" coords="249,387,324,52" shape="rect" onclick="playAudio(smokeAlarm)">
+       <area id="A" href="#" coords="331,381,424,70" shape="rect" onclick="playAudio(tires)">   
+     </map> 
+
+    <script>
+      function playAudio(id){        
+        id.play();
+      }
+    </script>
+  </body>
+</html>
