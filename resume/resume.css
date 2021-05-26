@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #fd0e35;
+  --seconday-color: #fdd835;
+}
+
+body {
+  margin: 30px;
+  color: var(--primary-color);
+}
+
+.my-row {
+  border: blue 1px solid;
+}
+
+.my-col {
+  border: red 2px solid;
+  background-color: var(--primary-color);
+}
+
+.title-letter {
+  font-family: "Marvel", sans-serif;
+  font-size: 150px;
+  text-align: center;
+  color: var(--seconday-color);
+  letter-spacing: 110px;
+}
+
+.side-bar {
+  border-left: var(--primary-color) 3px dotted;
+  background-color: var(--seconday-color);
+}
+
+.main {
+  background-color: var(--seconday-color);
+}
